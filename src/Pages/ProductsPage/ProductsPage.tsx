@@ -32,7 +32,7 @@ export const ProductsPage = () => {
         <Typography
           sx={{
             cursor: "pointer",
-            transition: "all 0.2s ",
+            // transition: "all 0.2s ",
 
             color: activeSlide === 0 && theme.palette.primary.main,
           }}
@@ -44,7 +44,7 @@ export const ProductsPage = () => {
           sx={{
             cursor: "pointer",
             transition: "all 0.3s ",
-            transitionDelay: "0.25s",
+
             color: activeSlide === 1 && theme.palette.primary.main,
           }}
           onClick={() => sliderHandler(1)}
@@ -55,7 +55,7 @@ export const ProductsPage = () => {
           sx={{
             cursor: "pointer",
             transition: "all 0.3s ",
-            transitionDelay: "0.25s",
+
             color: activeSlide === 2 && theme.palette.primary.main,
           }}
           onClick={() => sliderHandler(2)}
@@ -66,7 +66,7 @@ export const ProductsPage = () => {
           sx={{
             cursor: "pointer",
             transition: "all 0.3s ",
-            transitionDelay: "0.25s",
+
             color: activeSlide === 3 && theme.palette.primary.main,
           }}
           onClick={() => sliderHandler(3)}
@@ -121,8 +121,6 @@ export const ProductsPage = () => {
           }}
         >
           <Carousel slideRef={carouselRef} breadcrumbsRef={breadcrumbsRef} />
-          {/* <SlideShowText slideRef={textSlideRef} />
-          <SlideShowAssets slideRef={assetSlideRef} /> */}
         </Box>
       </Box>
     </Container>

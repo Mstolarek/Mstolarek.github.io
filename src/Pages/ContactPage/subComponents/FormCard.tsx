@@ -22,7 +22,7 @@ export const FormCard = () => {
     >
       <Typography>Fill out this form and we'll get back to you soon</Typography>
       <TextField fullWidth label="Email" sx={{ my: 1 }} />
-      <TextField fullWidth label="Phone Number" sx={{ my: 1 }} />
+
       <TextField
         fullWidth
         multiline
