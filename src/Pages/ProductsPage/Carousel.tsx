@@ -1,4 +1,5 @@
 import { Typography, Box, Link } from "@mui/material";
+
 import invoiceImage from "../../assets/Invoice-Investment-PNG.png";
 import chargerImage from "../../assets/63641b4a650a2e04a08270a9_csms hero image.png";
 import softwareImage from "../../assets/toppng.com-website-designing-and-software-development-company-675x717.png";
@@ -56,7 +57,7 @@ export const Carousel = (props: CarouselProps) => {
           </Typography>
         </Link>
       </Box>
-      <img width="400" height="auto" src={softwareImage} />
+      <img width="300" height="auto" src={softwareImage} />
     </Box>,
     <Box
       sx={{
@@ -102,7 +103,7 @@ export const Carousel = (props: CarouselProps) => {
           </Typography>
         </Link>
       </Box>
-      <img width="400" height="auto" src={chargerImage} />
+      <img width="300" height="auto" src={chargerImage} />
     </Box>,
     <Box
       sx={{
@@ -144,7 +145,7 @@ export const Carousel = (props: CarouselProps) => {
           </Typography>
         </Link>
       </Box>
-      <img width="400" height="auto" src={managamentImage} />
+      <img width="300" height="auto" src={managamentImage} />
     </Box>,
     <Box
       sx={{
@@ -183,7 +184,7 @@ export const Carousel = (props: CarouselProps) => {
           </Typography>
         </Link>
       </Box>
-      <img width="400" height="auto" src={invoiceImage} />
+      <img width="300" height="auto" src={invoiceImage} />
     </Box>,
   ];
 

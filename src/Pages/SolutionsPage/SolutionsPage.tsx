@@ -1,4 +1,11 @@
-import { Box, Typography, Container, Link } from "@mui/material";
+import {
+  Box,
+  Typography,
+  Container,
+  Link,
+  useMediaQuery,
+  Theme,
+} from "@mui/material";
 import { useNav } from "../../Hooks/useNav";
 import { SlidingCard } from "./SlidingCard";
 import { navLinks } from "../../Components/Navigation/navLinks";
@@ -13,16 +20,25 @@ export const SolutionsPage = () => {
   const { activeNavLinkId } = useNavContext();
   const isActive = activeNavLinkId === navLinks[2].navLinkId;
 
+  const isMobile = useMediaQuery((theme: Theme) =>
+    theme.breakpoints.down("sm")
+  );
+
   const items = [
     <Box
       sx={{
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-between",
+        flexWrap: isMobile ? "wrap" : "nowrap",
       }}
     >
       <Box sx={{ p: 2 }}>
-        <img width="auto" height="300" src={ladowarkaImage} />
+        <img
+          width={isMobile ? "300" : "auto"}
+          height={isMobile ? "auto" : "300"}
+          src={ladowarkaImage}
+        />
       </Box>
       <Box
         sx={{
@@ -58,6 +74,7 @@ export const SolutionsPage = () => {
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-between",
+        flexWrap: isMobile ? "wrap" : "nowrap",
       }}
     >
       <Box
@@ -89,7 +106,11 @@ export const SolutionsPage = () => {
         </Link>
       </Box>
       <Box sx={{ p: 2 }}>
-        <img width="auto" height="300" src={parkingImage2} />
+        <img
+          width={isMobile ? "300" : "auto"}
+          height={isMobile ? "auto" : "300"}
+          src={parkingImage2}
+        />
       </Box>
     </Box>,
     <Box
@@ -97,10 +118,15 @@ export const SolutionsPage = () => {
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-between",
+        flexWrap: isMobile ? "wrap" : "nowrap",
       }}
     >
       <Box sx={{ p: 2 }}>
-        <img width="auto" height="300" src={housesImage} />
+        <img
+          width={isMobile ? "300" : "auto"}
+          height={isMobile ? "auto" : "300"}
+          src={housesImage}
+        />
       </Box>
       <Box
         sx={{
@@ -137,6 +163,7 @@ export const SolutionsPage = () => {
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-between",
+        flexWrap: isMobile ? "wrap" : "nowrap",
       }}
     >
       <Box
@@ -169,7 +196,11 @@ export const SolutionsPage = () => {
         </Link>
       </Box>
       <Box sx={{ p: 2 }}>
-        <img width="auto" height="300" src={homecarImage} />
+        <img
+          width={isMobile ? "300" : "auto"}
+          height={isMobile ? "auto" : "300"}
+          src={homecarImage}
+        />
       </Box>
     </Box>,
   ];
@@ -182,7 +213,7 @@ export const SolutionsPage = () => {
       id="solutionsContainer"
       sx={{ py: 10, minHeight: "800px" }}
     >
-      <Box sx={{ display: "flex", py: 4 }}>
+      <Box sx={{ display: "flex", py: 4, flexWrap: "wrap" }}>
         <Typography
           variant="h4"
           fontWeight="bold"

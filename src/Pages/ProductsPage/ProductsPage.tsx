@@ -32,7 +32,7 @@ export const ProductsPage = () => {
         <Typography
           sx={{
             cursor: "pointer",
-            // transition: "all 0.2s ",
+            transition: "all 0.3s ",
 
             color: activeSlide === 0 && theme.palette.primary.main,
           }}
@@ -85,7 +85,7 @@ export const ProductsPage = () => {
           py: 20,
         }}
       >
-        <Box sx={{ display: "flex", py: 2 }}>
+        <Box sx={{ display: "flex", py: 2, flexWrap: "wrap" }}>
           <Typography
             variant="h4"
             fontWeight="bold"

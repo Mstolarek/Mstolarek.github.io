@@ -1,11 +1,19 @@
-import { Box, Typography, Container } from "@mui/material";
+import {
+  Box,
+  Typography,
+  Container,
+  useMediaQuery,
+  Theme,
+} from "@mui/material";
 import { useNav } from "../Hooks/useNav";
 import carImage from "../assets/pngfind.com-car-emoji-png-2864641.png";
 import { theme } from "../Constants/theme";
 
 export const HomePage = () => {
   const homeRef = useNav("Home");
-
+  const isMobile = useMediaQuery((theme: Theme) =>
+    theme.breakpoints.down("sm")
+  );
   return (
     <Box>
       <Container ref={homeRef} id="homeContainer">
@@ -20,7 +28,11 @@ export const HomePage = () => {
           }}
         >
           <Box sx={{ p: 4 }}>
-            <img width="auto" height="300" src={carImage} />
+            <img
+              width={isMobile ? "300" : "500"}
+              height="auto"
+              src={carImage}
+            />
           </Box>
           <Typography
             variant="h4"
