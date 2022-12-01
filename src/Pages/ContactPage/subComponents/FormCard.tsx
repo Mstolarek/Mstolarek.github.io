@@ -10,12 +10,12 @@ import {
 import SendIcon from "@mui/icons-material/Send";
 export const FormCard = () => {
   return (
-    //   <Slide in={visible} direction={direction} timeout={2000}>
     <Card
       sx={{
         backgroundColor: "rgba(255,255,255,0.25)",
         flex: 1,
         minHeight: "400px",
+        minWidth: "200px",
         maxWidth: "600px",
         p: 2,
       }}
@@ -42,6 +42,5 @@ export const FormCard = () => {
         </Button>
       </Box>
     </Card>
-    //   </Slide>
   );
 };

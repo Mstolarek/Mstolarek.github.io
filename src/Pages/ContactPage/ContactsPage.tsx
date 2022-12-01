@@ -34,6 +34,7 @@ export const ContactsPage = () => {
           display: "flex",
           flexDirection: "row",
           justifyContent: "space-between",
+          flexWrap: "wrap",
         }}
       >
         <Box>

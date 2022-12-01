@@ -1,5 +1,6 @@
-import { Box, Container } from "@mui/system";
+import { Box, useMediaQuery, Theme } from "@mui/material";
 import { HeaderBar } from "./HeaderBar";
+import { MobileHeadBar } from "./MobileHeadBar";
 
 export interface MainLayoutProps {
   children: React.ReactNode;
@@ -7,9 +8,13 @@ export interface MainLayoutProps {
 
 export const MainLayout = (props: MainLayoutProps) => {
   const { children } = props;
+  const isMobile = useMediaQuery((theme: Theme) =>
+    theme.breakpoints.down("sm")
+  );
   return (
     <Box>
-      <HeaderBar />
+      {isMobile ? <MobileHeadBar /> : <HeaderBar />}
+
       <Box>{children}</Box>
     </Box>
   );

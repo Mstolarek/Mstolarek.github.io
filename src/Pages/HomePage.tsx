@@ -20,7 +20,7 @@ export const HomePage = () => {
           }}
         >
           <Box sx={{ p: 4 }}>
-            <img width="500" height="auto" src={carImage} />
+            <img width="auto" height="300" src={carImage} />
           </Box>
           <Typography
             variant="h4"

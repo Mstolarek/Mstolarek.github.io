@@ -17,9 +17,13 @@ export const theme = createTheme({
   components: {
     MuiCssBaseline: {
       styleOverrides: {
+        "*": {
+          boxSizing: "border-box",
+        },
         html: {
           height: "100%",
           width: "100%",
+          overflowX: "hidden",
           backgroundColor: backgroundColors.primary,
           backgroundImage: `url(${image})`,
           backgroundSize: "contain",
@@ -31,12 +35,24 @@ export const theme = createTheme({
         },
         body: {
           height: "100%",
-          width: "100%",
+
           backgroundColor: "transparent",
         },
         "#root": {
           height: "100%",
-          width: "100%",
+        },
+        ".tree": {
+          listStyle: "none",
+        },
+      },
+    },
+    MuiContainer: {
+      styleOverrides: {
+        root: {
+          "@media (min-width: 600px)": {
+            paddingLeft: "32px",
+            paddingRight: "32px",
+          },
         },
       },
     },
