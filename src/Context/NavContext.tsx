@@ -7,15 +7,12 @@ export const NavContext = createContext("");
 
 const NavProvider = ({ children }: NavContextProps) => {
   const [activeNavLinkId, setActiveNavLinkId] = useState<State>("");
-
-  const providerValue = {
-    activeNavLinkId,
-    setActiveNavLinkId,
-  };
-
-  return (
-    <NavContext.Provider value={providerValue}>{children}</NavContext.Provider>
+  const value = useMemo(
+    () => ({ activeNavLinkId, setActiveNavLinkId }),
+    [activeNavLinkId]
   );
+
+  return <NavContext.Provider value={value}>{children}</NavContext.Provider>;
 };
 
 const useNavContext = () => {
