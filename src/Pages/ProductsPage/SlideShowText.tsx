@@ -36,7 +36,7 @@ export const SlideShowText = (props: SlideShowTextProps) => {
         <Typography>Remote updates & maintenance</Typography>
         <Typography>MDM (mobile device management) integration</Typography>
       </Box>
-      <Link href="https://www.google.pl/" target="blank" underline="none">
+      <Link href="https://i4b.pl/services/" target="blank" underline="none">
         <Typography color="primary" align="right" sx={{ pt: 4 }}>
           Learn more...
         </Typography>
@@ -72,7 +72,7 @@ export const SlideShowText = (props: SlideShowTextProps) => {
         </Typography>
         <Typography>OCPI implementation</Typography>
       </Box>
-      <Link href="https://www.google.pl/" target="blank" underline="none">
+      <Link href="https://i4b.pl/services/" target="blank" underline="none">
         <Typography color="primary" align="right" sx={{ pt: 4 }}>
           Learn more...
         </Typography>
@@ -104,7 +104,7 @@ export const SlideShowText = (props: SlideShowTextProps) => {
           Setting the limits of charging speed remotely (via API)
         </Typography>
       </Box>
-      <Link href="https://www.google.pl/" target="blank" underline="none">
+      <Link href="https://i4b.pl/services/" target="blank" underline="none">
         <Typography color="primary" align="right" sx={{ pt: 4 }}>
           Learn more...
         </Typography>
@@ -133,7 +133,7 @@ export const SlideShowText = (props: SlideShowTextProps) => {
         <Typography>Biling and invoicing</Typography>
         <Typography>Reports & Trends</Typography>
       </Box>
-      <Link href="https://www.google.pl/" target="blank" underline="none">
+      <Link href="https://i4b.pl/services/" target="blank" underline="none">
         <Typography color="primary" align="right" sx={{ pt: 4 }}>
           Learn more...
         </Typography>

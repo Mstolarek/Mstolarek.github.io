@@ -11,7 +11,7 @@ import { SlidingCard } from "./SlidingCard";
 import { navLinks } from "../../Components/Navigation/navLinks";
 import { useNavContext } from "../../Context/NavContext";
 import housesImage from "../../assets/NEW_HOUSES_GETTY_MIN.jpg";
-
+import { theme } from "../../Constants/theme";
 import homecarImage from "../../assets/shutterstock_1463745005.webp";
 import parkingImage2 from "../../assets/Screen-Shot-2021-02-15-at-6.webp";
 import ladowarkaImage from "../../assets/ladowarka.png";
@@ -50,19 +50,35 @@ export const SolutionsPage = () => {
       >
         <Box>
           <Typography variant="h5" color="primary">
-            Producent ładowarek bez softu
+            Charging station manufacturer
           </Typography>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </Typography>
+          <Box>
+            <Typography sx={{ pt: 1 }}>
+              Comprehensive and tailored package of software development
+              services that can help them successfully compete in the
+              electromobility market and achieve their business objectives. For
+              example, we could :
+            </Typography>
+            <Typography sx={{ pt: 1 }}>
+              - Develop custom software solutions for charging station
+              management and control, including reservation systems, payment
+              processing, and energy management.
+            </Typography>
+            <Typography sx={{ pt: 1 }}>
+              - Design and implement user-friendly mobile apps that allow EV
+              owners to easily locate, reserve, and pay for charging services at
+              their stations.
+            </Typography>
+            <Typography sx={{ pt: 1 }}>
+              - Integrate charging station infrastructure with existing systems,
+              such as energy grids and renewable energy sources, to optimize
+              performance and efficiency. Provide ongoing maintenance and
+              support services to ensure the smooth operation of charging
+              station software and systems.
+            </Typography>
+          </Box>
         </Box>
-        <Link href="https://www.google.pl/" target="blank" underline="none">
+        <Link href="https://i4b.pl/services/" target="blank" underline="none">
           <Typography color="primary" align="right">
             Learn more...
           </Typography>
@@ -87,19 +103,38 @@ export const SolutionsPage = () => {
       >
         <Box>
           <Typography variant="h5" color="primary">
-            Podmiot z powierzchnia parkingowa
+            Car parks
           </Typography>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </Typography>
+          <Box>
+            <Typography>
+              Range of electromobility, EVSE, and CSMS services to support the
+              deployment and operation of electric vehicle charging
+              infrastructure. These services could include:
+            </Typography>
+            <Typography sx={{ pt: 1 }}>
+              - Design and engineering services for EV charging stations and
+              related infrastructure, such as power supplies, communication
+              systems, and signage.
+            </Typography>
+            <Typography sx={{ pt: 1 }}>
+              - Charging station management and control services, including
+              reservation systems, payment processing, and energy management.
+            </Typography>
+            <Typography sx={{ pt: 1 }}>
+              - Customer support and technical assistance, such as providing
+              user manuals, training materials, and assistance with charging
+              station operation.
+            </Typography>
+            <Typography sx={{ pt: 1 }}>
+              - Subjects that operate electric vehicle fleets for shared use
+              among residents may be interested in using fleet management
+              software to track and manage their vehicles. This type of software
+              could help cooperatives to monitor vehicle usage, track
+              maintenance and repair needs, and manage access to vehicles.
+            </Typography>
+          </Box>
         </Box>
-        <Link href="https://www.google.pl/" target="blank" underline="none">
+        <Link href="https://i4b.pl/services/" target="blank" underline="none">
           <Typography color="primary" align="right">
             Learn more...
           </Typography>
@@ -139,19 +174,33 @@ export const SolutionsPage = () => {
       >
         <Box>
           <Typography variant="h5" color="primary">
-            Społdzielnia mieszkaniowa
+            Housing cooperatives
           </Typography>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </Typography>
+          <Box>
+            <Typography sx={{ pt: 1 }}>
+              - Subjects that have installed electric vehicle charging stations
+              may be interested in using a charging station management software
+              to manage and monitor their charging infrastructure. This type of
+              software could allow cooperatives to track usage, monitor charging
+              status, and manage access to charging stations.
+            </Typography>
+            <Typography sx={{ pt: 1 }}>
+              - Mobility services platform: Housing cooperatives may be
+              interested in offering mobility services, such as car-sharing or
+              bike-sharing, to their residents. A mobility services platform
+              could provide the technology and infrastructure needed to manage
+              and operate these services.
+            </Typography>
+            <Typography sx={{ pt: 1 }}>
+              - Energy management software: Housing cooperatives may be
+              interested in using energy management software to monitor and
+              manage their energy usage. This type of software could allow
+              cooperatives to track energy consumption and identify
+              opportunities for energy savings.
+            </Typography>
+          </Box>
         </Box>
-        <Link href="https://www.google.pl/" target="blank" underline="none">
+        <Link href="https://i4b.pl/services/" target="blank" underline="none">
           <Typography color="primary" align="right">
             Learn more...
           </Typography>
@@ -177,19 +226,26 @@ export const SolutionsPage = () => {
       >
         <Box>
           <Typography variant="h5" color="primary">
-            Prywatny odbiorca
+            Private households
           </Typography>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </Typography>
+          <Box>
+            <Typography sx={{ pt: 1 }}>
+              Range of software development services that could support their
+              personal or business needs, such as :
+            </Typography>
+            <Typography sx={{ pt: 1 }}>
+              - Develop custom software solutions for home automation and
+              control, such as smart home systems, security systems, and energy
+              management.
+            </Typography>
+            <Typography sx={{ pt: 1 }}>
+              - Design and implement mobile apps that allow homeowners to easily
+              manage and monitor their home systems and appliances from their
+              mobile devices.
+            </Typography>
+          </Box>
         </Box>
-        <Link href="https://www.google.pl/" target="blank" underline="none">
+        <Link href="https://i4b.pl/services/" target="blank" underline="none">
           <Typography color="primary" align="right">
             Learn more...
           </Typography>
@@ -211,15 +267,15 @@ export const SolutionsPage = () => {
     <Container
       ref={navRef}
       id="solutionsContainer"
-      sx={{ py: 10, minHeight: "800px" }}
+      sx={{ py: 5, minHeight: "700px" }}
     >
-      <Box sx={{ display: "flex", py: 4, flexWrap: "wrap" }}>
+      <Box sx={{ display: "flex", flexWrap: "wrap" }}>
         <Typography
           variant="h4"
           fontWeight="bold"
           sx={{ whiteSpace: "break-spaces" }}
         >
-          We have{" "}
+          Scalable{" "}
         </Typography>
         <Typography
           variant="h4"
@@ -234,9 +290,12 @@ export const SolutionsPage = () => {
           fontWeight="bold"
           sx={{ whiteSpace: "break-spaces" }}
         >
-          for your business
+          for limitless growth.
         </Typography>
       </Box>
+      <Typography color={theme.palette.text.secondary}>
+        We meet EV charging business with ready made remedies
+      </Typography>
       {items.map((element, index) => (
         <SlidingCard
           setOpen={isActive}

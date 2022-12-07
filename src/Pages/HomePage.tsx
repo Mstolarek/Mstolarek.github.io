@@ -19,7 +19,7 @@ export const HomePage = () => {
       <Container ref={homeRef} id="homeContainer">
         <Box
           sx={{
-            minHeight: "800px",
+            minHeight: "700px",
             py: 10,
             display: "flex",
             flex: 1,
@@ -41,10 +41,54 @@ export const HomePage = () => {
           >
             Custom software development for eMobility companies
           </Typography>
-          <Typography color={theme.palette.text.secondary}>
-            The future of electric vehicles is happening now and we are the
-            software partner who creates it.
+          <Typography
+            color={theme.palette.text.secondary}
+            sx={{ textAlign: "center", my: 1 }}
+          >
+            We at EV Lab are dedicated to help eMobility companies thrive. We
+            bring our world-class team of programmers, designers, analysts and
+            business process experts together to develop robust eMobility
+            solutions that meet your organization’s unique requirements.
           </Typography>
+          <Box
+            sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
+          >
+            <Typography
+              color={theme.palette.text.secondary}
+              fontWeight="bold"
+              sx={{ whiteSpace: "break-spaces" }}
+            >
+              The{" "}
+            </Typography>
+            <Typography
+              fontWeight="bold"
+              sx={{ whiteSpace: "break-spaces" }}
+              color="primary"
+            >
+              future of electric vehicles{" "}
+            </Typography>
+            <Typography
+              color={theme.palette.text.secondary}
+              fontWeight="bold"
+              sx={{ whiteSpace: "break-spaces" }}
+            >
+              is happening now and we are the{" "}
+            </Typography>
+            <Typography
+              fontWeight="bold"
+              sx={{ whiteSpace: "break-spaces" }}
+              color="primary"
+            >
+              software partner{" "}
+            </Typography>
+            <Typography
+              color={theme.palette.text.secondary}
+              fontWeight="bold"
+              sx={{ whiteSpace: "break-spaces" }}
+            >
+              who creates it.
+            </Typography>
+          </Box>
         </Box>
       </Container>
     </Box>

@@ -27,7 +27,7 @@ export const ProductsPage = () => {
     };
 
     return (
-      <Breadcrumbs sx={{ mb: 4 }}>
+      <Breadcrumbs sx={{ mb: 2, mt: 2 }}>
         <Typography
           sx={{
             cursor: "pointer",
@@ -85,7 +85,7 @@ export const ProductsPage = () => {
             py: 20,
           }}
         >
-          <Box sx={{ display: "flex", py: 2, flexWrap: "wrap" }}>
+          <Box sx={{ display: "flex", flexWrap: "wrap" }}>
             <Typography
               variant="h4"
               fontWeight="bold"
@@ -109,7 +109,11 @@ export const ProductsPage = () => {
               pool
             </Typography>
           </Box>
+          <Typography color={theme.palette.text.secondary}>
+            We can provide you all the tools you need.
+          </Typography>
           <BreadcrumbNavigation ref={breadcrumbsRef} />
+
           <Box
             sx={{
               flex: 1,

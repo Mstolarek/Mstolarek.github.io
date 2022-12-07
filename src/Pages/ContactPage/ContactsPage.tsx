@@ -9,7 +9,7 @@ export const ContactsPage = () => {
     <Container
       ref={contactsRef}
       id="contactContainer"
-      sx={{ py: 8, minHeight: "800px" }}
+      sx={{ py: 5, minHeight: "800px" }}
     >
       <Box sx={{ display: "flex", py: 4 }}>
         <Typography
