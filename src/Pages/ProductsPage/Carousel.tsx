@@ -1,10 +1,10 @@
-import { Typography, Box, Link } from "@mui/material";
+import { Typography, Box, Link, useMediaQuery, Theme } from "@mui/material";
 
 import invoiceImage from "../../assets/Invoice-Investment-PNG.png";
-import chargerImage from "../../assets/63641b4a650a2e04a08270a9_csms hero image.png";
-import softwareImage from "../../assets/toppng.com-website-designing-and-software-development-company-675x717.png";
+import chargerImage from "../../assets/2-evse2.png";
+import softwareImage from "../../assets/3-cms.png";
 import AliceCarousel from "react-alice-carousel";
-import managamentImage from "../../assets/energy-management-software-development.png";
+import managamentImage from "../../assets/4-dynamic-load2.png";
 import "react-alice-carousel/lib/alice-carousel.css";
 import headImage from "../../assets/head.svg";
 import calendarImage from "../../assets/calendar.svg";
@@ -17,7 +17,9 @@ interface CarouselProps {
 
 export const Carousel = (props: CarouselProps) => {
   const { slideRef, breadcrumbsRef } = props;
-
+  const isMobile = useMediaQuery((theme: Theme) =>
+    theme.breakpoints.down("sm")
+  );
   const items = [
     <Box
       sx={{
@@ -57,7 +59,11 @@ export const Carousel = (props: CarouselProps) => {
           </Typography>
         </Link>
       </Box>
-      <img width="300" height="auto" src={softwareImage} />
+      {isMobile ? (
+        <img width="300" height="auto" src={chargerImage} />
+      ) : (
+        <img width="500" height="auto" src={chargerImage} />
+      )}
     </Box>,
     <Box
       sx={{
@@ -103,7 +109,11 @@ export const Carousel = (props: CarouselProps) => {
           </Typography>
         </Link>
       </Box>
-      <img width="300" height="auto" src={chargerImage} />
+      {isMobile ? (
+        <img width="300" height="auto" src={softwareImage} />
+      ) : (
+        <img width="500" height="auto" src={softwareImage} />
+      )}
     </Box>,
     <Box
       sx={{
@@ -145,7 +155,11 @@ export const Carousel = (props: CarouselProps) => {
           </Typography>
         </Link>
       </Box>
-      <img width="300" height="auto" src={managamentImage} />
+      {isMobile ? (
+        <img width="300" height="auto" src={managamentImage} />
+      ) : (
+        <img width="350" height="auto" src={managamentImage} />
+      )}
     </Box>,
     <Box
       sx={{

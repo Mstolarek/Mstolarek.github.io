@@ -6,7 +6,7 @@ import {
   Theme,
 } from "@mui/material";
 import { useNav } from "../Hooks/useNav";
-import carImage from "../assets/pngfind.com-car-emoji-png-2864641.png";
+import carImage from "../assets/1-ev-lab.png";
 import { theme } from "../Constants/theme";
 
 export const HomePage = () => {
