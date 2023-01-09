@@ -1,94 +1,138 @@
+import MouseOutlinedIcon from "@mui/icons-material/MouseOutlined";
 import {
   Box,
-  Typography,
   Container,
-  useMediaQuery,
   Theme,
+  Typography,
+  useMediaQuery,
 } from "@mui/material";
-import { useNav } from "../Hooks/useNav";
 import carImage from "../assets/1-ev-lab.png";
+import backgroundimage from "../assets/i4bHalfLogo.svg";
+import { ContactButton } from "../Components/ContactButton";
 import { theme } from "../Constants/theme";
-
+import { useContentHeight } from "../Hooks/useContentHeight";
+import { useNav } from "../Hooks/useNav";
 export const HomePage = () => {
   const homeRef = useNav("Home");
   const isMobile = useMediaQuery((theme: Theme) =>
     theme.breakpoints.down("sm")
   );
+
+  const contentHeight = useContentHeight();
+
   return (
-    <Box>
-      <Container ref={homeRef} id="homeContainer">
+    <Box
+      sx={{
+        backgroundImage: `url(${backgroundimage})`,
+        backgroundSize: "contain",
+        backgroundRepeat: "no-repeat",
+        backgroundAttachment: "fixed",
+        height: contentHeight,
+      }}
+    >
+      <Container
+        ref={homeRef}
+        id="homeContainer"
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+          height: contentHeight,
+        }}
+      >
+        <Box sx={{ display: "flex", flexDirection: "column", height: "100%" }}>
+          <Box
+            sx={{
+              display: "flex",
+              flex: 1,
+              flexDirection: "row",
+              alignItems: "center",
+            }}
+          >
+            <Box>
+              <Typography variant="h4" fontWeight="bold" sx={{ pb: 4 }}>
+                Custom software development for eMobility companies
+              </Typography>
+
+              <Box
+                sx={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                }}
+              >
+                <Typography
+                  color={theme.palette.text.secondary}
+                  fontWeight="bold"
+                  variant="h6"
+                  sx={{ whiteSpace: "break-spaces" }}
+                >
+                  The{" "}
+                </Typography>
+                <Typography
+                  fontWeight="bold"
+                  sx={{ whiteSpace: "break-spaces" }}
+                  variant="h6"
+                  color="primary"
+                >
+                  future of electric vehicles{" "}
+                </Typography>
+                <Typography
+                  color={theme.palette.text.secondary}
+                  variant="h6"
+                  fontWeight="bold"
+                  sx={{ whiteSpace: "break-spaces" }}
+                >
+                  is happening now and we are the{" "}
+                </Typography>
+                <Typography
+                  fontWeight="bold"
+                  sx={{ whiteSpace: "break-spaces" }}
+                  variant="h6"
+                  color="primary"
+                >
+                  software partner{" "}
+                </Typography>
+                <Typography
+                  color={theme.palette.text.secondary}
+                  variant="h6"
+                  fontWeight="bold"
+                  sx={{ whiteSpace: "break-spaces" }}
+                >
+                  who creates it.
+                </Typography>
+              </Box>
+              <ContactButton sx={{ mt: 10 }} />
+            </Box>
+            <Box sx={{ p: 4 }}>
+              <img
+                width={isMobile ? "300" : "600"}
+                height="auto"
+                src={carImage}
+              />
+            </Box>
+          </Box>
+        </Box>
         <Box
           sx={{
-            minHeight: "700px",
-            py: 10,
             display: "flex",
-            flex: 1,
-            flexDirection: "column",
+            flexDirection: "row",
+            justifyContent: "center",
             alignItems: "center",
+            p: 4,
           }}
         >
-          <Box sx={{ p: 4 }}>
-            <img
-              width={isMobile ? "300" : "500"}
-              height="auto"
-              src={carImage}
-            />
-          </Box>
           <Typography
-            variant="h4"
-            fontWeight="bold"
-            sx={{ textAlign: "center" }}
+            sx={{
+              fontSize: "20px",
+              fontWeight: "700",
+              lineHeight: "27.24px",
+              letterSpacing: 8,
+              textTransform: "uppercase",
+            }}
           >
-            Custom software development for eMobility companies
+            Discover more
           </Typography>
-          <Typography
-            color={theme.palette.text.secondary}
-            sx={{ textAlign: "center", my: 1 }}
-          >
-            We at EV Lab are dedicated to help eMobility companies thrive. We
-            bring our world-class team of programmers, designers, analysts and
-            business process experts together to develop robust eMobility
-            solutions that meet your organization’s unique requirements.
-          </Typography>
-          <Box
-            sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
-          >
-            <Typography
-              color={theme.palette.text.secondary}
-              fontWeight="bold"
-              sx={{ whiteSpace: "break-spaces" }}
-            >
-              The{" "}
-            </Typography>
-            <Typography
-              fontWeight="bold"
-              sx={{ whiteSpace: "break-spaces" }}
-              color="primary"
-            >
-              future of electric vehicles{" "}
-            </Typography>
-            <Typography
-              color={theme.palette.text.secondary}
-              fontWeight="bold"
-              sx={{ whiteSpace: "break-spaces" }}
-            >
-              is happening now and we are the{" "}
-            </Typography>
-            <Typography
-              fontWeight="bold"
-              sx={{ whiteSpace: "break-spaces" }}
-              color="primary"
-            >
-              software partner{" "}
-            </Typography>
-            <Typography
-              color={theme.palette.text.secondary}
-              fontWeight="bold"
-              sx={{ whiteSpace: "break-spaces" }}
-            >
-              who creates it.
-            </Typography>
-          </Box>
+          <MouseOutlinedIcon sx={{ fontSize: 32, mx: 2 }} />
         </Box>
       </Container>
     </Box>

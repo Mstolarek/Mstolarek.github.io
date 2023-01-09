@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export const useOnScreen = (ref) => {
   const [isOnScreen, setOnScreen] = useState(false);
@@ -11,10 +11,12 @@ export const useOnScreen = (ref) => {
   );
 
   useEffect(() => {
-    observer.observe(ref.current);
-    return () => {
-      observer.disconnect();
-    };
+    document.addEventListener("DOMContentLoaded", () => {
+      observer.observe(ref.current);
+      return () => {
+        observer.disconnect();
+      };
+    });
   });
 
   return isOnScreen;
