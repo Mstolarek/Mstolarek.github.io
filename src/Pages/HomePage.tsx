@@ -26,8 +26,8 @@ export const HomePage = () => {
         backgroundImage: `url(${backgroundimage})`,
         backgroundSize: "contain",
         backgroundRepeat: "no-repeat",
-        backgroundAttachment: "fixed",
-        height: contentHeight,
+
+        minHeight: contentHeight,
       }}
     >
       <Container
@@ -37,16 +37,24 @@ export const HomePage = () => {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          height: contentHeight,
+
+          minHeight: contentHeight,
         }}
       >
-        <Box sx={{ display: "flex", flexDirection: "column", height: "100%" }}>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            flex: 1,
+          }}
+        >
           <Box
             sx={{
               display: "flex",
               flex: 1,
               flexDirection: "row",
               alignItems: "center",
+              flexWrap: isMobile ? "wrap" : undefined,
             }}
           >
             <Box>

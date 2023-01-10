@@ -1,4 +1,4 @@
-import { Box, useMediaQuery, Theme } from "@mui/material";
+import { Box, Theme, useMediaQuery } from "@mui/material";
 import { HeaderBar } from "./HeaderBar";
 import { MobileHeadBar } from "./MobileHeadBar";
 
@@ -11,10 +11,10 @@ export const MainLayout = (props: MainLayoutProps) => {
   const isMobile = useMediaQuery((theme: Theme) =>
     theme.breakpoints.down("sm")
   );
+
   return (
     <Box>
       {isMobile ? <MobileHeadBar /> : <HeaderBar />}
-
       <Box>{children}</Box>
     </Box>
   );

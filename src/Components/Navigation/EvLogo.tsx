@@ -23,7 +23,7 @@ export const EvLogo = (props: EvLogoProps) => {
           d="M 12.2926 5.60897 L 12.2958 5.84679 L 12.5027 5.96409 L 21.6799 11.1668 L 10.7658 17.7705 L 10.7074 13.391 L 10.7042 13.1532 L 10.4973 13.0359 L 1.32005 7.83319 L 12.2342 1.22951 L 12.2926 5.60897 Z"
         />
       </svg>
-      <Typography variant="h4" color="primary">
+      <Typography variant="h4" color="primary" sx={{ fontWeight: "bold" }}>
         EV Lab
       </Typography>
     </Box>

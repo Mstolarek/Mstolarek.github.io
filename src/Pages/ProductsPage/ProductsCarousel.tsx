@@ -10,6 +10,7 @@ import headImage from "../../assets/head.svg";
 import invoiceImage from "../../assets/Invoice-Investment-PNG.png";
 import energyImage from "../../assets/renew.svg";
 import { palette } from "../../Constants/theme";
+import { ListTypography } from "./subComponents/ListTypography";
 
 export const ProductsCarousel = () => {
   const isMobile = useMediaQuery((theme: Theme) =>
@@ -49,27 +50,13 @@ export const ProductsCarousel = () => {
             </Typography>
           </Box>
 
-          <Typography color={palette.text.contrast}>
-            Kiosk mode for Android/Linux based screens
-          </Typography>
-          <Typography color={palette.text.contrast}>
-            OCPP implementation
-          </Typography>
-          <Typography color={palette.text.contrast}>
-            MODBUS/CAN implementation
-          </Typography>
-          <Typography color={palette.text.contrast}>
-            IoT cloud integration
-          </Typography>
-          <Typography color={palette.text.contrast}>
-            UI/UX design and flow optimisation
-          </Typography>
-          <Typography color={palette.text.contrast}>
-            Remote updates & maintenance
-          </Typography>
-          <Typography color={palette.text.contrast}>
-            MDM (mobile device management) integration
-          </Typography>
+          <ListTypography content="Kiosk mode for Android/Linux based screens" />
+          <ListTypography content="OCPP implementation" />
+          <ListTypography content="MODBUS/CAN implementation" />
+          <ListTypography content="IoT cloud integration" />
+          <ListTypography content="UI/UX design and flow optimisation" />
+          <ListTypography content="Remote updates & maintenance" />
+          <ListTypography content="MDM (mobile device management) integration" />
         </Box>
       </Box>
     </Box>,
@@ -105,32 +92,15 @@ export const ProductsCarousel = () => {
               CSMS Chargers Management Systems
             </Typography>
           </Box>
-
-          <Typography color={palette.text.contrast}>
-            Availability of the chargers
-          </Typography>
-          <Typography color={palette.text.contrast}>
-            Transactions / loading
-          </Typography>
-          <Typography color={palette.text.contrast}>
-            Monitoring and alerting
-          </Typography>
-          <Typography color={palette.text.contrast}>Web dashboards</Typography>
-          <Typography color={palette.text.contrast}>
-            Mobile client app
-          </Typography>
-          <Typography color={palette.text.contrast}>
-            Backoffice for admins and operators
-          </Typography>
-          <Typography color={palette.text.contrast}>
-            Multitenant solutions – SaaS or On-Premises installations
-          </Typography>
-          <Typography color={palette.text.contrast}>
-            External tools integrations with the use of webhooks
-          </Typography>
-          <Typography color={palette.text.contrast}>
-            OCPI implementation
-          </Typography>
+          <ListTypography content="Availability of the chargers" />
+          <ListTypography content="Transactions / loading" />
+          <ListTypography content="Monitoring and alerting" />
+          <ListTypography content="Web dashboards" />
+          <ListTypography content="Mobile client app" />
+          <ListTypography content="Backoffice for admins and operators" />
+          <ListTypography content="Multitenant solutions – SaaS or On-Premises installations" />
+          <ListTypography content="External tools integrations with the use of webhooks" />
+          <ListTypography content="OCPI implementation" />
         </Box>
       </Box>
     </Box>,
@@ -154,7 +124,6 @@ export const ProductsCarousel = () => {
               display: "flex",
               flexDirection: "row",
               alignItems: "center",
-              justifyContent: "space-between",
             }}
           >
             <img height="auto" src={headImage} />
@@ -166,18 +135,10 @@ export const ProductsCarousel = () => {
               Dynamic Load Management
             </Typography>
           </Box>
-          <Typography color={palette.text.contrast}>
-            Dynamic Load Management
-          </Typography>
-          <Typography color={palette.text.contrast}>
-            Splitting the available energy from one circuit to multiple chargers
-          </Typography>
-          <Typography color={palette.text.contrast}>
-            Possibility to balance the speed of charging per client
-          </Typography>
-          <Typography color={palette.text.contrast}>
-            Setting the limits of charging speed remotely (via API)
-          </Typography>
+          <ListTypography content="Dynamic Load Management" />
+          <ListTypography content="Splitting the available energy from one circuit to multiple chargers" />
+          <ListTypography content="Possibility to balance the speed of charging per client" />
+          <ListTypography content="Setting the limits of charging speed remotely (via API)" />
         </Box>
       </Box>
     </Box>,
@@ -197,7 +158,6 @@ export const ProductsCarousel = () => {
               display: "flex",
               flexDirection: "row",
               alignItems: "center",
-              justifyContent: "space-between",
             }}
           >
             <img height="auto" src={calendarImage} />
@@ -209,17 +169,12 @@ export const ProductsCarousel = () => {
               Payments & Invoicing
             </Typography>
           </Box>
-
-          <Typography color={palette.text.contrast}>
-            Payments module – calculations & innovative payments methods
-            integrations
-          </Typography>
-          <Typography color={palette.text.contrast}>
-            Biling and invoicing
-          </Typography>
-          <Typography color={palette.text.contrast}>
-            Reports & Trends
-          </Typography>
+          <ListTypography
+            content="Payments module – calculations & innovative payments methods
+            integrations"
+          />
+          <ListTypography content="Biling and invoicing" />
+          <ListTypography content="Reports & Trends" />
         </Box>
       </Box>
     </Box>,

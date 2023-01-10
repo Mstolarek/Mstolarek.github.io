@@ -13,6 +13,7 @@ export const palette = {
     contrast: "rgba(0, 0, 0, 0.87)",
   },
 };
+
 export const theme = createTheme({
   palette: palette,
   components: {

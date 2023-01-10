@@ -16,7 +16,7 @@ export const ProductsPage = () => {
           backgroundColor: "white",
           borderTop: "1px solid",
           borderColor: theme.palette.primary.main,
-          height: contentHeight,
+          minHeight: contentHeight,
         }}
       >
         <Container

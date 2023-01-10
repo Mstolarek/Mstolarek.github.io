@@ -157,6 +157,7 @@ export const SolutionsPage = () => {
                 display: "flex",
                 flexDirection: "row",
                 justifyContent: "center",
+                flexWrap: isMobile ? "wrap" : undefined,
               }}
             >
               <Box
@@ -250,5 +251,5 @@ export const SolutionsPage = () => {
         </Container>
       </Box>
     );
-  }, []);
+  }, [isMobile]);
 };
