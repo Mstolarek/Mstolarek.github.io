@@ -26,7 +26,7 @@ export const ProductsPage = () => {
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-between",
-            height: contentHeight,
+            minheight: contentHeight,
             py: 10,
           }}
         >
@@ -70,6 +70,7 @@ export const ProductsPage = () => {
             sx={{
               height: "1px",
               backgroundColor: palette.text.contrast,
+              mt: 5,
             }}
           />
         </Container>
